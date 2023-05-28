@@ -1,0 +1,22 @@
+.main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px
+}
+.cards{
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.delete{
+  width: 36px !important;
+  height: 36px !important;
+}
+.side{
+  display: flex;
+    justify-content: space-between;
+}

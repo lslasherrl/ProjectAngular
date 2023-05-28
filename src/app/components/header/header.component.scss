@@ -1,0 +1,16 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.header{
+  padding: 30px;
+}
+.mat-toolbar.mat-primary {
+  display: flex;
+  justify-content: space-between;
+}
+.mat-mdc-fab.mat-accent, .mat-mdc-mini-fab.mat-accent {
+  --mdc-fab-container-color: #fff;
+  --mdc-fab-icon-color: #fff;
+  --mat-mdc-fab-color: #002fff;
+}
+

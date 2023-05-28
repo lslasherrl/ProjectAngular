@@ -1,0 +1,24 @@
+<div class="main">
+  <mat-card class="cards" *ngFor="let item of dados">
+    <mat-card-content>
+      <h2>{{ item?.id }} - {{ item?.title }}</h2></mat-card-content
+    >
+    <mat-card-content>{{ item?.body }}</mat-card-content>
+    <div class ="side">
+    <button class="delete"
+      mat-button
+      color="primary"
+      (click)="sendDelete(item?.id)"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+    <button class="edit"
+      mat-button
+      color="primary"
+      (click)="openDialog(item)"
+     >
+      <mat-icon>edit</mat-icon>
+    </button>
+  </div>
+  </mat-card>
+</div>

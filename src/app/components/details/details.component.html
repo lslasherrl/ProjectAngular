@@ -1,0 +1,14 @@
+
+<mat-dialog-content class="mat-typography">
+<form [formGroup]="editForm" (ngSubmit)="onSave()">
+  <div>
+    <label for="nome">Titulo</label>
+    <input type="text" id="nome" formControlName="title">
+  </div>
+  <div>
+    <label for="idade">Texto</label>
+    <input type="text" id="idade" formControlName="body">
+  </div>
+  <button mat-button type="submit" [disabled]="editForm.invalid">Salvar</button>
+</form>
+</mat-dialog-content>
