@@ -17,7 +17,7 @@ export class clientService {
     return this.httpClient.delete(url)
   }
 
-  public apiPut(dados: any){
+  public apiPatch(dados: any){
     const url = `https://jsonplaceholder.typicode.com/posts/${dados.id}`
     const cond = {title: dados.title, body: dados.body, id: dados.id, userId: dados.userId};
    return this.httpClient.patch(url, cond);
