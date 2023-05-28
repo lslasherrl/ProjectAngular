@@ -26,6 +26,5 @@ export class AppComponent implements OnInit {
     this.clientService.apiDelete(Event).subscribe(()=> {
     console.log("item excluido com sucesso")
     })
-    console.log(Event, "chegou")
   }
 }

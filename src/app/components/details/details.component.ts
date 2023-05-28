@@ -24,7 +24,7 @@ export class DetailsComponent implements OnInit {
   }
   onSave() {
     if (this.editForm.valid) {
-      this.clientService.apiPut(this.editForm.value).subscribe(()=> {
+      this.clientService.apiPatch(this.editForm.value).subscribe(()=> {
         console.log("editado")
         })
     }
